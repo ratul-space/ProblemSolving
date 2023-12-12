@@ -7,8 +7,10 @@ fun main() {
 
 fun simpleArraySum(ar: Array<Int>): Int {
     var sum = 0
-    for (eliment in ar) {
-        sum += eliment
+
+    for (element in ar) {
+        sum += element
     }
+
     return sum
 }
