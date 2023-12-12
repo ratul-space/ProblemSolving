@@ -7,7 +7,7 @@ fun main() {
     println("${result[0]} ${result[1]}")
 }
 
-fun compareTriplets(a: Array<Int>, b: Array<Int>): Array<Int> {
+fun compareTriplets2(a: Array<Int>, b: Array<Int>): Array<Int> {
     var scoreOfAlice = 0
     var scoreOfBob = 0
     for (i in 0..2) {
