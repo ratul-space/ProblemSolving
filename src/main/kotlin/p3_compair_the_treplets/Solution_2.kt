@@ -10,12 +10,11 @@ fun main() {
 fun compareTriplets2(a: Array<Int>, b: Array<Int>): Array<Int> {
     var scoreOfAlice = 0
     var scoreOfBob = 0
+
     for (i in 0..2) {
         if (a[i] > b[i]) scoreOfAlice += 1
-        if (a[i] > b[i]) scoreOfBob += 1
+        if (a[i] < b[i]) scoreOfBob += 1
     }
-
-
 
     return arrayOf(scoreOfAlice, scoreOfBob)
 }
