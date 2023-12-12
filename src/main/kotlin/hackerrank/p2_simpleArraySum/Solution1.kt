@@ -5,10 +5,4 @@ fun main() {
     println(sum)
 }
 
-fun simpleArraySum2(ar: Array<Int>): Int {
-    var sum = 0
-    for (eliment in ar) {
-        ar.forEach { sum += eliment }
-    }
-    return sum
-}
+fun simpleArraySum2(ar: Array<Int>) = ar.sum()
