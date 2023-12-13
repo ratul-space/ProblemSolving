@@ -6,7 +6,7 @@ fun main() {
 
 fun plusMinus(arr: Array<Int>) {
     val positives = arr.count { it > 0 }
-    val negatives = arr.count { it > 0 }
+    val negatives = arr.count { it < 0 }
     var zeros = arr.count { it == 0 }
 
     val size = arr.size.toDouble()
