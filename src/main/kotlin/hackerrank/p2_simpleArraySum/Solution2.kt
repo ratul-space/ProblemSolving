@@ -9,7 +9,7 @@ fun simpleArraySum(ar: Array<Int>): Int {
     var sum = 0
 
     for (element in ar) {
-        sum += element
+        sum = sum + element
     }
 
     return sum
