@@ -9,7 +9,6 @@ package p8_time_convarsion
 
 fun timeConversion(s: String): String {
 //    input: 07:05:45PM
-    println("input: $s")
     val splitStringList: List<String> = s.split(":")
     var hourIn12Format: Int = 0
     var minuteIn12Format: Int = 0
@@ -25,24 +24,18 @@ fun timeConversion(s: String): String {
     amPmIn12Format = secWithAmPm.takeLast(2)
 
     // main logic
-    println("---------------")
-
     var hourIn24Format: Int = 0
     var minuteIn24Format: Int = 0
     var secondIn24Format: Int = 0
     var finalResult = ""
 
     if (amPmIn12Format.equals("PM") && hourIn12Format < 12) {
-        println("if executed")
         hourIn24Format = hourIn12Format + 12
     } else if (amPmIn12Format.equals("PM") && hourIn12Format == 12) {
-        println("else if executed: hourIn12Format == 12")
         hourIn24Format = 12
     } else if (amPmIn12Format.equals("AM") && hourIn12Format < 12) {
-        println("else if checking 3")
         hourIn24Format = hourIn12Format
     } else if (amPmIn12Format.equals("AM") && hourIn12Format == 12) {
-        println("else if checking 4")
         hourIn24Format = 0
     }
 
